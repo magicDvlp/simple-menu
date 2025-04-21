@@ -9,7 +9,7 @@
   "engines": {
     "node": ">=20.3.0 <21.0.0"
   },
-  "author": "Aleksey Osadchiy",
+  "author": "magicDvlp",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -49,7 +49,8 @@
     "core-js": "^3.38.0"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/magicDvlp/simple-menu"
   },
   "homepage": "",
   "description": "Simple menu",
