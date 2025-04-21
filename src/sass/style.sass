@@ -1,0 +1,61 @@
+@import "variables"
+.simple-menu
+  position: fixed
+  inset: 0
+  height: 100dvh
+  width: 100%
+  background: var(--sm-bg-color)
+  overflow: auto
+  z-index: 100
+  display: none
+  @supports not (height: 100dvh)
+    height: 100vh
+  // &_active
+  //   .simple-menu-item
+  //     opacity: 1
+  //     transform: none
+  &-animation
+    visibility: hidden
+    opacity: 0
+    transition: all 0.4s
+    &-fade-in
+      animation: fadeIn 0.5s linear forwards
+    &-fade-out
+      animation: fadeOut 0.5s linear forwards
+  &-list
+    display: flex
+    width: 100%
+    min-height: 100dvh
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: var(--sm-padding)
+    @supports not (height: 100dvh)
+      height: 100vh
+  &-item
+    margin-bottom: var(--sm-item-mb)
+    // transform: translateY(1rem)
+    // opacity: 0
+    // transition: all 0.8s
+    // transition-delay: 0.3s
+    &:last-child
+      margin-bottom: 0
+    &__link
+      font-family: inherit
+      font-size: var(--sm-font-size)
+      font-weight: var(--sm-font-weight)
+      color: var(--sm-text-color)
+      text-transform: uppercase
+      text-align: center
+@keyframes fadeIn
+  from
+    opacity: 0
+    visibility: hidden
+  to
+    opacity: 1
+    visibility: visible
+@keyframes fadeOut
+  from
+    opacity: 1
+  to
+    opacity: 0
