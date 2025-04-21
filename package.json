@@ -1,6 +1,6 @@
 {
   "name": "magic-simple-menu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "start": "concurrently \"webpack serve --mode development --progress\" \"tsc --emitDeclarationOnly --watch\"",
     "build": "webpack --mode production --progress",
