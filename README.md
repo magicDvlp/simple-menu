@@ -4,7 +4,8 @@ A minimal JavaScript menu component written in TypeScript, with optional fade an
 
 ## 📦 Installation
 
-Include the necessary files in your project.
+````bash
+npm install magic-simple-menu
 
 ### JavaScript
 
@@ -16,7 +17,7 @@ You can use either the ES module (recommended) or the UMD version.
 
 <!-- UMD (for older setups) -->
 <script src="public/js/index.js"></script>
-```
+````
 
 ### Styles
 

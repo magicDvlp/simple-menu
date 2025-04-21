@@ -1,5 +1,5 @@
 {
-  "name": "simple-menu",
+  "name": "magic-simple-menu",
   "version": "1.0.0",
   "scripts": {
     "start": "concurrently \"webpack serve --mode development --progress\" \"tsc --emitDeclarationOnly --watch\"",
